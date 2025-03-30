@@ -1,0 +1,2002 @@
+fileFormatVersion: 2
+guid: a0aa7fa15fe51aa4abb6dfe895baddc9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1807345508359885377
+    second: modern_day_basics_0
+  - first:
+      213: 1422624346340448331
+    second: modern_day_basics_1
+  - first:
+      213: 7624698791297956557
+    second: modern_day_basics_2
+  - first:
+      213: 5837494194782105652
+    second: modern_day_basics_3
+  - first:
+      213: 1313146900396411556
+    second: modern_day_basics_4
+  - first:
+      213: -8231244950729193289
+    second: modern_day_basics_5
+  - first:
+      213: -2416694141765090559
+    second: modern_day_basics_6
+  - first:
+      213: 1169669447225325209
+    second: modern_day_basics_7
+  - first:
+      213: -6807284429722451410
+    second: modern_day_basics_8
+  - first:
+      213: -3525873396330237170
+    second: modern_day_basics_9
+  - first:
+      213: 6905884386729429061
+    second: modern_day_basics_10
+  - first:
+      213: -1668547934285166308
+    second: modern_day_basics_11
+  - first:
+      213: -2956723350764046647
+    second: modern_day_basics_12
+  - first:
+      213: -4785991851288485590
+    second: modern_day_basics_13
+  - first:
+      213: -2922343817019018330
+    second: modern_day_basics_14
+  - first:
+      213: 7355663931222048797
+    second: modern_day_basics_15
+  - first:
+      213: 1169757742636897531
+    second: modern_day_basics_16
+  - first:
+      213: -2236836657361755234
+    second: modern_day_basics_17
+  - first:
+      213: -6602806661300945761
+    second: modern_day_basics_18
+  - first:
+      213: 4117940516931704555
+    second: modern_day_basics_19
+  - first:
+      213: 5850683043920214786
+    second: modern_day_basics_20
+  - first:
+      213: -2446741017485868274
+    second: modern_day_basics_21
+  - first:
+      213: -6453650697350036254
+    second: modern_day_basics_22
+  - first:
+      213: 1021470417805054621
+    second: modern_day_basics_23
+  - first:
+      213: 7384493007205819699
+    second: modern_day_basics_24
+  - first:
+      213: -1770779184931194634
+    second: modern_day_basics_25
+  - first:
+      213: 7015083212604734075
+    second: modern_day_basics_26
+  - first:
+      213: -2025358368408543024
+    second: modern_day_basics_27
+  - first:
+      213: 5846640065084697874
+    second: modern_day_basics_28
+  - first:
+      213: 2563435115596328162
+    second: modern_day_basics_29
+  - first:
+      213: 4922301328653395235
+    second: modern_day_basics_30
+  - first:
+      213: -1601683758266053669
+    second: modern_day_basics_31
+  - first:
+      213: -2513646001174915012
+    second: modern_day_basics_32
+  - first:
+      213: 8887559986891821367
+    second: modern_day_basics_33
+  - first:
+      213: 5243875120225027993
+    second: modern_day_basics_34
+  - first:
+      213: -1852428532185936972
+    second: modern_day_basics_35
+  - first:
+      213: 808303116524103187
+    second: modern_day_basics_36
+  - first:
+      213: -8643675871697907814
+    second: modern_day_basics_37
+  - first:
+      213: 6768769461257305907
+    second: modern_day_basics_38
+  - first:
+      213: 1833835502035495864
+    second: modern_day_basics_39
+  - first:
+      213: -853371358077427658
+    second: modern_day_basics_40
+  - first:
+      213: 2657752972093222833
+    second: modern_day_basics_41
+  - first:
+      213: -904486885455304294
+    second: modern_day_basics_42
+  - first:
+      213: 6191912971136355336
+    second: modern_day_basics_43
+  - first:
+      213: 6846650189288860433
+    second: modern_day_basics_44
+  - first:
+      213: 6665827557244785015
+    second: modern_day_basics_45
+  - first:
+      213: -4714606942555928808
+    second: modern_day_basics_46
+  - first:
+      213: 7374848079131373275
+    second: modern_day_basics_47
+  - first:
+      213: 2969740554673634675
+    second: modern_day_basics_48
+  - first:
+      213: -6381899379298763047
+    second: modern_day_basics_49
+  - first:
+      213: -9160914412393923622
+    second: modern_day_basics_50
+  - first:
+      213: 2574586479343375778
+    second: modern_day_basics_51
+  - first:
+      213: -6519383238033512002
+    second: modern_day_basics_52
+  - first:
+      213: 8606965760429861563
+    second: modern_day_basics_53
+  - first:
+      213: 2165124680024944158
+    second: modern_day_basics_54
+  - first:
+      213: 2327998267103954264
+    second: modern_day_basics_55
+  - first:
+      213: 8457777533683883416
+    second: modern_day_basics_56
+  - first:
+      213: 8051012877397008515
+    second: modern_day_basics_57
+  - first:
+      213: 2424938827192913673
+    second: modern_day_basics_58
+  - first:
+      213: 7946237094135744827
+    second: modern_day_basics_59
+  - first:
+      213: 6031807112167516562
+    second: modern_day_basics_60
+  - first:
+      213: -6538324218461983686
+    second: modern_day_basics_61
+  - first:
+      213: -7645580183883775915
+    second: modern_day_basics_62
+  - first:
+      213: -2110713017813495357
+    second: modern_day_basics_63
+  - first:
+      213: -6835767627846521835
+    second: modern_day_basics_64
+  - first:
+      213: -3620543192249771401
+    second: modern_day_basics_65
+  - first:
+      213: 2303537756385550299
+    second: modern_day_basics_66
+  - first:
+      213: -1948302156500623924
+    second: modern_day_basics_67
+  - first:
+      213: 5929611371433404109
+    second: modern_day_basics_68
+  - first:
+      213: 2358536085552566788
+    second: modern_day_basics_69
+  - first:
+      213: 1075686780046149706
+    second: modern_day_basics_70
+  - first:
+      213: 826653290889402470
+    second: modern_day_basics_71
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: modern_day_basics_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 644
+        width: 145
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbdafcbf5d40be6e0800000000000000
+      internalID: -1807345508359885377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_1
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 646
+        width: 136
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b48d17c3e4d2eb310800000000000000
+      internalID: 1422624346340448331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_2
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 669
+        width: 156
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca3aae372f50d960800000000000000
+      internalID: 7624698791297956557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_3
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 733
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4307462ba02f20150800000000000000
+      internalID: 5837494194782105652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_4
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 782
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aa8808062c393210800000000000000
+      internalID: 1313146900396411556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_5
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 771
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b80f8c045eb4cd80800000000000000
+      internalID: -8231244950729193289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_6
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 760
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10303557b7d267ed0800000000000000
+      internalID: -2416694141765090559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_7
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 672
+        width: 46
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9963e724a208b3010800000000000000
+      internalID: 1169669447225325209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 516
+        width: 96
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e228851b0eaa781a0800000000000000
+      internalID: -6807284429722451410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_9
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 582
+        width: 44
+        height: 58
+      alignment: 9
+      pivot: {x: 0.76522726, y: 0.8388746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e037cb0b3d4911fc0800000000000000
+      internalID: -3525873396330237170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_10
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 520
+        width: 115
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5488ce2c241a6df50800000000000000
+      internalID: 6905884386729429061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_11
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 599
+        width: 16
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19883e7e7028d8e0800000000000000
+      internalID: -1668547934285166308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_12
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 543
+        width: 121
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c63b9227cb97f6d0800000000000000
+      internalID: -2956723350764046647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 557
+        width: 75
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a21290eb4cdb49db0800000000000000
+      internalID: -4785991851288485590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_14
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 599
+        width: 16
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3b50b18cfb177d0800000000000000
+      internalID: -2922343817019018330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 520
+        width: 44
+        height: 58
+      alignment: 9
+      pivot: {x: 0.7373085, y: 0.8176954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d10c4ab9f51941660800000000000000
+      internalID: 7355663931222048797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_16
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 436
+        width: 103
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf492232870db3010800000000000000
+      internalID: 1169757742636897531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_17
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 435
+        width: 101
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e93616159e825f0e0800000000000000
+      internalID: -2236836657361755234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_18
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 481
+        width: 29
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9cf290235e1e54a0800000000000000
+      internalID: -6602806661300945761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 423
+        width: 87
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be617e5151dd52930800000000000000
+      internalID: 4117940516931704555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_20
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 412
+        width: 101
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20bf34eea3dc13150800000000000000
+      internalID: 5850683043920214786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_21
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 460
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e03806b020e6b0ed0800000000000000
+      internalID: -2446741017485868274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_22
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 321
+        width: 102
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4cff732e60076a0800000000000000
+      internalID: -6453650697350036254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_23
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 371
+        width: 70
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9217d9deedfc2e00800000000000000
+      internalID: 1021470417805054621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_24
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 342
+        width: 101
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 335ebdce34dfa7660800000000000000
+      internalID: 7384493007205819699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_25
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 344
+        width: 102
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f8358a96bdec67e0800000000000000
+      internalID: -1770779184931194634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_26
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 323
+        width: 75
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a7c1da3059a5160800000000000000
+      internalID: 7015083212604734075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_27
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 342
+        width: 37
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d0e4247b4b74e3e0800000000000000
+      internalID: -2025358368408543024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_28
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 342
+        width: 37
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21da0f09920732150800000000000000
+      internalID: 5846640065084697874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_29
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 237
+        width: 102
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eca1ede7a6239320800000000000000
+      internalID: 2563435115596328162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_30
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 251
+        width: 99
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 325a1db9af68f4440800000000000000
+      internalID: 4922301328653395235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_31
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 301
+        width: 70
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdb0a02ab1da5c9e0800000000000000
+      internalID: -1601683758266053669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_32
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 253
+        width: 99
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3853e0a74cbd1dd0800000000000000
+      internalID: -2513646001174915012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_33
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 230
+        width: 87
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73199a248b4f65b70800000000000000
+      internalID: 8887559986891821367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_34
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 259
+        width: 65
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997858b73acf5c840800000000000000
+      internalID: 5243875120225027993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_35
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 185
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb4247801ada46e0800000000000000
+      internalID: -1852428532185936972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_36
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 185
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 316a243e66ba73b00800000000000000
+      internalID: 808303116524103187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_37
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 209
+        width: 65
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9fc4d1479e7b0880800000000000000
+      internalID: -8643675871697907814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_38
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 175
+        width: 29
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ff0c866ff7fed50800000000000000
+      internalID: 6768769461257305907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_39
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 169
+        width: 102
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bb635b4ca7137910800000000000000
+      internalID: 1833835502035495864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_40
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 2
+        width: 27
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6306d4c65473824f0800000000000000
+      internalID: -853371358077427658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_41
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 193
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bfea5a2f3c32e420800000000000000
+      internalID: 2657752972093222833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_42
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 169
+        width: 34
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99ef6848fd9273f0800000000000000
+      internalID: -904486885455304294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_43
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 169
+        width: 34
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80c47b48a081ee550800000000000000
+      internalID: 6191912971136355336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_44
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 180
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b6ce17210340f50800000000000000
+      internalID: 6846650189288860433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_45
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 142
+        width: 46
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771d593a8d6c18c50800000000000000
+      internalID: 6665827557244785015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_46
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 121
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8170d5df6f9529eb0800000000000000
+      internalID: -4714606942555928808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_47
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 166
+        width: 46
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdee81d1149b85660800000000000000
+      internalID: 7374848079131373275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_48
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 141
+        width: 53
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37db464dc43a63920800000000000000
+      internalID: 2969740554673634675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_49
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 143
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9de7c98c350fe67a0800000000000000
+      internalID: -6381899379298763047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_50
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 116
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adbf087e0e4edd080800000000000000
+      internalID: -9160914412393923622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_51
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 132
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a519c023c4cab320800000000000000
+      internalID: 2574586479343375778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_52
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 128
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb960667c7f7685a0800000000000000
+      internalID: -6519383238033512002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_53
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 135
+        width: 53
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bba2f58e1c5127770800000000000000
+      internalID: 8606965760429861563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_54
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 80
+        width: 25
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e6157dc611c0e10800000000000000
+      internalID: 2165124680024944158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_55
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 128
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855c474f616be4020800000000000000
+      internalID: 2327998267103954264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_56
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 106
+        width: 25
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89dd18c0bdf006570800000000000000
+      internalID: 8457777533683883416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_57
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 116
+        width: 170
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 380285f4e81fabf60800000000000000
+      internalID: 8051012877397008515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_58
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 101
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90fc2e4f30d17a120800000000000000
+      internalID: 2424938827192913673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_59
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 74
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b394ef04984b64e60800000000000000
+      internalID: 7946237094135744827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_60
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 104
+        width: 170
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2996b625c9845b350800000000000000
+      internalID: 6031807112167516562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_61
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 61
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c6d3cc3c43345a0800000000000000
+      internalID: -6538324218461983686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_62
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 74
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55087dda45175e590800000000000000
+      internalID: -7645580183883775915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_63
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 74
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c11f6e71bd35b2e0800000000000000
+      internalID: -2110713017813495357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_64
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 59
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ce7175f897221a0800000000000000
+      internalID: -6835767627846521835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_65
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 50
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a5efb262f31cdc0800000000000000
+      internalID: -3620543192249771401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_66
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 50
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf9f00826fc7ff10800000000000000
+      internalID: 2303537756385550299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_67
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 71
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccd17aed28d36f4e0800000000000000
+      internalID: -1948302156500623924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_68
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 50
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6a76a30263a4250800000000000000
+      internalID: 5929611371433404109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_69
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 69
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4021d41e2143bb020800000000000000
+      internalID: 2358536085552566788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_70
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 26
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a480c3e5d6b9dee00800000000000000
+      internalID: 1075686780046149706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: modern_day_basics_71
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 61
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668dedbc9ccd87b00800000000000000
+      internalID: 826653290889402470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9848b571f9907cc41bebd691514d1853
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      modern_day_basics_0: -1807345508359885377
+      modern_day_basics_1: 1422624346340448331
+      modern_day_basics_10: 6905884386729429061
+      modern_day_basics_11: -1668547934285166308
+      modern_day_basics_12: -2956723350764046647
+      modern_day_basics_13: -4785991851288485590
+      modern_day_basics_14: -2922343817019018330
+      modern_day_basics_15: 7355663931222048797
+      modern_day_basics_16: 1169757742636897531
+      modern_day_basics_17: -2236836657361755234
+      modern_day_basics_18: -6602806661300945761
+      modern_day_basics_19: 4117940516931704555
+      modern_day_basics_2: 7624698791297956557
+      modern_day_basics_20: 5850683043920214786
+      modern_day_basics_21: -2446741017485868274
+      modern_day_basics_22: -6453650697350036254
+      modern_day_basics_23: 1021470417805054621
+      modern_day_basics_24: 7384493007205819699
+      modern_day_basics_25: -1770779184931194634
+      modern_day_basics_26: 7015083212604734075
+      modern_day_basics_27: -2025358368408543024
+      modern_day_basics_28: 5846640065084697874
+      modern_day_basics_29: 2563435115596328162
+      modern_day_basics_3: 5837494194782105652
+      modern_day_basics_30: 4922301328653395235
+      modern_day_basics_31: -1601683758266053669
+      modern_day_basics_32: -2513646001174915012
+      modern_day_basics_33: 8887559986891821367
+      modern_day_basics_34: 5243875120225027993
+      modern_day_basics_35: -1852428532185936972
+      modern_day_basics_36: 808303116524103187
+      modern_day_basics_37: -8643675871697907814
+      modern_day_basics_38: 6768769461257305907
+      modern_day_basics_39: 1833835502035495864
+      modern_day_basics_4: 1313146900396411556
+      modern_day_basics_40: -853371358077427658
+      modern_day_basics_41: 2657752972093222833
+      modern_day_basics_42: -904486885455304294
+      modern_day_basics_43: 6191912971136355336
+      modern_day_basics_44: 6846650189288860433
+      modern_day_basics_45: 6665827557244785015
+      modern_day_basics_46: -4714606942555928808
+      modern_day_basics_47: 7374848079131373275
+      modern_day_basics_48: 2969740554673634675
+      modern_day_basics_49: -6381899379298763047
+      modern_day_basics_5: -8231244950729193289
+      modern_day_basics_50: -9160914412393923622
+      modern_day_basics_51: 2574586479343375778
+      modern_day_basics_52: -6519383238033512002
+      modern_day_basics_53: 8606965760429861563
+      modern_day_basics_54: 2165124680024944158
+      modern_day_basics_55: 2327998267103954264
+      modern_day_basics_56: 8457777533683883416
+      modern_day_basics_57: 8051012877397008515
+      modern_day_basics_58: 2424938827192913673
+      modern_day_basics_59: 7946237094135744827
+      modern_day_basics_6: -2416694141765090559
+      modern_day_basics_60: 6031807112167516562
+      modern_day_basics_61: -6538324218461983686
+      modern_day_basics_62: -7645580183883775915
+      modern_day_basics_63: -2110713017813495357
+      modern_day_basics_64: -6835767627846521835
+      modern_day_basics_65: -3620543192249771401
+      modern_day_basics_66: 2303537756385550299
+      modern_day_basics_67: -1948302156500623924
+      modern_day_basics_68: 5929611371433404109
+      modern_day_basics_69: 2358536085552566788
+      modern_day_basics_7: 1169669447225325209
+      modern_day_basics_70: 1075686780046149706
+      modern_day_basics_71: 826653290889402470
+      modern_day_basics_8: -6807284429722451410
+      modern_day_basics_9: -3525873396330237170
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
