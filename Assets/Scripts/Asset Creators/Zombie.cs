@@ -3,17 +3,53 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum SpeedType {
+    Basic,
+    Creeper,
+    Stiff,
+    Hungry,
+    Speedy,
+    Flighty
+}
+
+public enum ToughnessType {
+    Average,
+    Fragile,
+    Solid,
+    Protected,
+    Dense,
+    Hardened,
+    Machined,
+    Great,
+    Undying,
+    UltraUndying
+}
+
 [CreateAssetMenu(fileName = "Zombie", menuName = "PVZ 2/Create new Zombie")]
 public class Zombie : ScriptableObject
 {
+    [Header("Zombie Infos")]
+    [SerializeField] GameObject zombiePrefabTemplate;
     [SerializeField] string zombieName;
 
     [TextArea]
     [SerializeField] string description;
-    
-    [SerializeField] GameObject zombiePrefabTemplate;
 
+    [SerializeField] SpeedType zombieSpeedType;
+    
+    [System.Serializable]
+    public class ZombieHealthComponent
+    {
+        [SerializeField] string componentName;
+        [SerializeField] int health;
+        public string ComponentName => componentName;
+        public int Health => health;
+    }
+    [SerializeField] List<ZombieHealthComponent> heathComponents = new List<ZombieHealthComponent>(){};
+    
     // Sprite Changes
+    [Space(10)]
+    [Header("Sprite Changes")]
     [SerializeField] Sprite bodyChange = null;
     [SerializeField] Sprite headTopPartChange = null;
     [SerializeField] Sprite headBottomPartChange = null;
@@ -38,6 +74,49 @@ public class Zombie : ScriptableObject
     public string ZombieName => zombieName;
     public string Description => description;
     public GameObject ZombiePrefabTemplate => zombiePrefabTemplate;
+
+    public SpeedType ZombieSpeedType => zombieSpeedType;
+    
+    public int Health
+    {
+        get
+        {
+            int health = 0;
+
+            foreach (var component in heathComponents)
+            {
+                health += component.Health;
+            }
+
+            return health;
+        }
+    }
+
+    public List<ZombieHealthComponent> HealthComponents => heathComponents;
+
+    public ToughnessType Toughness
+    {
+        get
+        {
+            int health = Health;
+            if (health <= 0) { 
+                Debug.LogError("Health cannot be negative");
+                return ToughnessType.UltraUndying; 
+            }
+            if (health >= 1 && health <= 100) { return ToughnessType.Fragile; }
+            if (health >= 101 && health <= 200) { return ToughnessType.Average; }
+            if (health >= 201 && health <= 320) { return ToughnessType.Solid; }
+            if (health >= 321 && health <= 600) { return ToughnessType.Protected; }
+            if (health >= 301 && health <= 1000) { return ToughnessType.Dense; }
+            if (health >= 1001 && health <= 1700) { return ToughnessType.Hardened; }
+            if (health >= 1701 && health <= 2500) { return ToughnessType.Machined; }
+            if (health >= 2501 && health <= 8000) { return ToughnessType.Great; }
+            if (health >= 8001 && health <= 29500) { return ToughnessType.Undying; }
+            return ToughnessType.UltraUndying;
+        }
+    }
+    public float Speed { get { return SpeedDictionary[ZombieSpeedType]; } }
+
     public Sprite BodyChange => bodyChange;
     public Sprite HeadTopPartChange => headTopPartChange;
     public Sprite HeadBottomPartChange => headBottomPartChange;
@@ -57,4 +136,14 @@ public class Zombie : ScriptableObject
     public Sprite RightLegChange => rightLegChange;
     public Sprite RightFootBackChange => rightFootBackChange;
     public Sprite RightFootFrontChange => rightFootFrontChange;
+
+    // Stats Dictionaries
+    public static readonly Dictionary<SpeedType, float> SpeedDictionary = new Dictionary<SpeedType, float>(){
+        { SpeedType.Basic, 5f },
+        { SpeedType.Creeper, 7.5f },
+        { SpeedType.Stiff, 6.75f },
+        { SpeedType.Hungry, 3.75f },
+        { SpeedType.Speedy, 2.5f },
+        { SpeedType.Flighty, 0.5f }
+    };
 }

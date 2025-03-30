@@ -18,5 +18,5 @@ MonoBehaviour:
     spawnLane: 1
     spawnColumn: -1
   - zombie: {fileID: 11400000, guid: 83270c84b503e0443afc3327f73b80b5, type: 2}
-    spawnLane: 3
+    spawnLane: 4
     spawnColumn: -1

@@ -6,14 +6,55 @@ public class ZombieObject : MonoBehaviour
     public Zombie zombie;
     public GameObject zombiePrefabTemplate;
 
-    void Start(){}
+    private Rigidbody2D rb;
+    private float timeElapsed = 0f;  // Time passed since starting to move
 
-    void Update(){}
+    private void Start(){
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    public void ZombieUpdate(float tileWidth){
+        float waitBeforeMove = zombiePrefabTemplate.GetComponent<ZombiePrefab>().WaitBeforeMove;
+        float beginningOffset = zombiePrefabTemplate.GetComponent<ZombiePrefab>().MovingBeginningOffset;
+        float endingOffset = zombiePrefabTemplate.GetComponent<ZombiePrefab>().MovingEndingOffset;
+        float stationaryMoveSpeed = (tileWidth / zombie.Speed) * Time.fixedDeltaTime;
+
+        timeElapsed += Time.fixedDeltaTime;
+        if (timeElapsed > waitBeforeMove && timeElapsed <= beginningOffset){
+            // Beginning part of its movement (increasing exponential speed)
+            float beginningSpeedCurvature = zombiePrefabTemplate.GetComponent<ZombiePrefab>().BeginningSpeedCurvature;
+            float offset1 = Mathf.Log(stationaryMoveSpeed / (Mathf.Exp(beginningSpeedCurvature * beginningOffset) - 1));
+            float offset2 = stationaryMoveSpeed / (1-Mathf.Exp(beginningSpeedCurvature * beginningOffset));
+
+            float beginningSpeed = Mathf.Exp(beginningSpeedCurvature * timeElapsed + offset1) + offset2;
+            rb.linearVelocity = new Vector2(-beginningSpeed, rb.linearVelocity.y);
+        } else if (timeElapsed >= zombie.Speed - endingOffset && timeElapsed <= zombie.Speed){
+            // Ending part of its movement (decreasing exponential speed)
+            float endingSpeedCurvature = zombiePrefabTemplate.GetComponent<ZombiePrefab>().EndingSpeedCurvature;
+            float offset1 = Mathf.Log(stationaryMoveSpeed / (Mathf.Exp(endingSpeedCurvature * zombie.Speed) - Mathf.Exp(endingSpeedCurvature * (zombie.Speed - endingOffset))));
+            float offset2 = Mathf.Exp(endingSpeedCurvature * zombie.Speed + offset1);
+
+            float endingSpeed = Mathf.Exp(endingSpeedCurvature * timeElapsed + offset1) + offset2;
+            if (!float.IsNaN(endingSpeed) && !float.IsInfinity(endingSpeed))
+            {
+                rb.linearVelocity = new Vector2(-endingSpeed, rb.linearVelocity.y);
+            }
+
+        } else if (timeElapsed >= zombie.Speed){
+            timeElapsed = 0f;
+            rb.linearVelocity = Vector2.zero;
+        } else if (timeElapsed <= waitBeforeMove){
+            rb.linearVelocity = Vector2.zero;
+        } else {
+            // Middle part of its movement (constant speed)
+            rb.linearVelocity = new Vector2(-stationaryMoveSpeed, rb.linearVelocity.y);
+        }
+    }
 
     // --------------------------------------------------------------------------------------------
 
     // Utils for the SetSprite method
-   GameObject FindChildByName(Transform parent, string childName)
+    GameObject FindChildByName(Transform parent, string childName)
     {
         foreach (Transform child in parent)
         {
@@ -34,7 +75,8 @@ public class ZombieObject : MonoBehaviour
     // --------------------------------------------------------------------------------------------
 
     public void SetSprite(){
-        zombiePrefabTemplate = Instantiate(zombie.ZombiePrefabTemplate, transform.position, transform.rotation);
+        Vector3 offsets = new Vector3(zombie.ZombiePrefabTemplate.GetComponent<ZombiePrefab>().XOffset, zombie.ZombiePrefabTemplate.GetComponent<ZombiePrefab>().YOffset, zombie.ZombiePrefabTemplate.GetComponent<ZombiePrefab>().ZOffset);
+        zombiePrefabTemplate = Instantiate(zombie.ZombiePrefabTemplate, transform.position + offsets, transform.rotation);
         zombiePrefabTemplate.transform.SetParent(transform);
 
         if (zombie.BodyChange != null) { FindChildByName(zombiePrefabTemplate.transform, "Body").GetComponent<SpriteRenderer>().sprite = zombie.BodyChange; }

@@ -34,6 +34,7 @@ public class ZombieWave : ScriptableObject
             GameObject newZombie = Instantiate(zombieObject, spawnPosition, Quaternion.identity, lawn.ZombiesContainer.transform);
             newZombie.GetComponent<ZombieObject>().zombie = entry.zombie;
             newZombie.GetComponent<ZombieObject>().SetSprite();
+            lawn.AddZombie(newZombie);
         }
     }
 }

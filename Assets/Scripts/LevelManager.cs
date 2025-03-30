@@ -18,6 +18,17 @@ public class LevelManager : MonoBehaviour
         LaunchNextWave();
     }
 
+    private void Update(){
+        float tileWidth = lawn.GetTileSize()[0];
+        foreach (var zombieObject in lawn.Zombies){
+            zombieObject.GetComponent<ZombieObject>().ZombieUpdate(tileWidth);
+
+            // TODO: check if zombie is dead and remove it from the level
+        }
+    }
+
+    // --------------------------------------------------------------------------------------------
+
     private void LaunchNextWave(){
         if(currentWave < zombieWaves.Count){
             Debug.Log("Launched wave " + currentWave);

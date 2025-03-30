@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,12 +13,25 @@ public class Lawn : MonoBehaviour
 
     private int rowAmount = 5;
     private int columnAmount = 11;   // 9 true columns + 2 false ones (zombie spawn & Game Over)
+    private List<GameObject> zombies = new List<GameObject>();
 
     public Sprite LawnImage => lawnImage;
     public Image LawnBackground => lawnBackground;
     public GameObject LawnGrid => lawnGrid;
     public GameObject TilePrefab => tilePrefab;
     public GameObject ZombiesContainer => zombiesContainer;
+    public List<GameObject> Zombies => zombies;
+
+    // --------------------------------------------------------------------------------------------
+
+    public void AddZombie(GameObject zombie)
+    {
+        zombies.Add(zombie);
+    }
+    public void RemoveZombie(GameObject zombie)
+    {
+        zombies.Remove(zombie);
+    }
 
     // --------------------------------------------------------------------------------------------
 
@@ -34,6 +49,16 @@ public class Lawn : MonoBehaviour
         }
     
         LayoutRebuilder.ForceRebuildLayoutImmediate(lawnGrid.GetComponent<RectTransform>());
+    }
+
+    public Vector2 GetTileSize(){
+        GameObject tile = lawnGrid.transform.GetChild(0).gameObject;
+        RectTransform rect = tile.GetComponent<RectTransform>();
+        if (rect!= null)
+        {
+            return rect.sizeDelta;
+        }
+        return Vector2.zero;
     }
 
     public Vector3 GetTileCenter(int i, int j)

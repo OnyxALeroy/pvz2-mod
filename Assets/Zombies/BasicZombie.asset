@@ -12,6 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97dd20e0ae86be44abeeea077c2f1db0, type: 3}
   m_Name: BasicZombie
   m_EditorClassIdentifier: 
+  zombiePrefabTemplate: {fileID: 8869054930856757629, guid: ffd32b4d2e984184f93a02d67dd930bb, type: 3}
   zombieName: Basic Zombie
   description: 
-  zombiePrefabTemplate: {fileID: 8869054930856757629, guid: ffd32b4d2e984184f93a02d67dd930bb, type: 3}
+  zombieSpeedType: 0
+  heathComponents:
+  - componentName: Zombie
+    health: 190
+  bodyChange: {fileID: 0}
+  headTopPartChange: {fileID: 0}
+  headBottomPartChange: {fileID: 0}
+  headAccessoryChange: {fileID: 0}
+  leftArmChange: {fileID: 0}
+  leftForearmChange: {fileID: 0}
+  leftHandChange: {fileID: 0}
+  rightArmChange: {fileID: 0}
+  rightForearmChange: {fileID: 0}
+  rightHandChange: {fileID: 0}
+  bottomChange: {fileID: 0}
+  leftThighChange: {fileID: 0}
+  leftLegChange: {fileID: 0}
+  leftFootBackChange: {fileID: 0}
+  leftFootFrontChange: {fileID: 0}
+  rightThighChange: {fileID: 0}
+  rightLegChange: {fileID: 0}
+  rightFootBackChange: {fileID: 0}
+  rightFootFrontChange: {fileID: 0}
