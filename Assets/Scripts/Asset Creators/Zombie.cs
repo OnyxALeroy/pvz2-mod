@@ -41,9 +41,12 @@ public class Zombie : ScriptableObject
     public class ZombieHealthComponent
     {
         [SerializeField] string componentName;
-        [SerializeField] int health;
+        [SerializeField] int maxHealth;
         public string ComponentName => componentName;
-        public int Health => health;
+        public int MaxHealth => maxHealth;
+
+        private int health = -1;
+        public int Health { get => health; set { health = value; } }
     }
     [SerializeField] List<ZombieHealthComponent> heathComponents = new List<ZombieHealthComponent>(){};
     
@@ -81,11 +84,32 @@ public class Zombie : ScriptableObject
     {
         get
         {
+            int H = 0;
+
+            foreach (var component in heathComponents)
+            {
+                int h = component.Health;
+
+                if (h == -1){
+                    h = component.MaxHealth;
+                    component.Health = h;
+                }
+
+                H += h;
+            }
+
+            return H;
+        }
+    } 
+    public int MaxHealth
+    {
+        get
+        {
             int health = 0;
 
             foreach (var component in heathComponents)
             {
-                health += component.Health;
+                health += component.MaxHealth;
             }
 
             return health;
@@ -98,7 +122,7 @@ public class Zombie : ScriptableObject
     {
         get
         {
-            int health = Health;
+            int health = MaxHealth;
             if (health <= 0) { 
                 Debug.LogError("Health cannot be negative");
                 return ToughnessType.UltraUndying; 

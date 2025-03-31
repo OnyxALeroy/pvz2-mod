@@ -18,7 +18,7 @@ MonoBehaviour:
   zombieSpeedType: 0
   heathComponents:
   - componentName: Zombie
-    health: 190
+    maxHealth: 190
   bodyChange: {fileID: 0}
   headTopPartChange: {fileID: 0}
   headBottomPartChange: {fileID: 0}

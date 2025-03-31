@@ -7,15 +7,15 @@
 - A basic zombie wave builder, alongside a generic Zombie Builder ;
 - When the wave is linked to the Level Manager (manually for now), the zombies are successfully spawned (at the right place).
 - On spawn, the zombies start walking to the left, with the corresponding animation and speed (the speed is encoded by the Zombie's speed type).
+- Waves will launched based on levels' internal data (how long to wait between waves, and how much damage needs to be dealt before launching the next one).
+- As soon as a Zombie crossed the lawn, Game Over is triggered.
 
 ## Todo-List
 
 ### Zombies
 
-a) Adding time between waves (the next wave is launched when enough time has passed, or when enough damage is dealt to the previous wave) ;
-b) Adding Game Over ;
-c) _[Optional]_ Adding three new animations for the basic Zombie : Idle, Eating and Death ;
-d) _[Optional]_ Adding damaged animations to the Zombies.
+a) _[Optional]_ Adding three new animations for the basic Zombie : Idle, Eating and Death ;
+b) _[Optional]_ Adding damaged animations to the Zombies.
 
 ### Plants
 

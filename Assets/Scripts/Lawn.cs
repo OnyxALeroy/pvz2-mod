@@ -22,6 +22,8 @@ public class Lawn : MonoBehaviour
     public GameObject ZombiesContainer => zombiesContainer;
     public List<GameObject> Zombies => zombies;
 
+    public bool HasZombieCrossed { get; set; }
+
     // --------------------------------------------------------------------------------------------
 
     public void AddZombie(GameObject zombie)
@@ -39,12 +41,24 @@ public class Lawn : MonoBehaviour
     {
         Vector3 lawnGridPos = lawnGrid.transform.position;
         lawnBackground.sprite = lawnImage;
+        HasZombieCrossed = false;
 
         for (int row = 0; row < rowAmount; row++)
         {
             for (int col = 0; col < columnAmount; col++)
             {
-                Instantiate(tilePrefab, lawnGrid.transform);
+                GameObject tile = Instantiate(tilePrefab, lawnGrid.transform);
+                
+                // Adding a collider to the first column of each row (for Game Over trigger)
+                if (col == 0)
+                {
+                    BoxCollider2D collider = tile.GetComponent<BoxCollider2D>();
+                    if (collider == null)
+                    {
+                        collider = tile.AddComponent<BoxCollider2D>();
+                    }
+                    collider.isTrigger = true;
+                }
             }
         }
     

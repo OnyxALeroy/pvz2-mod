@@ -18,9 +18,9 @@ MonoBehaviour:
   zombieSpeedType: 0
   heathComponents:
   - componentName: RoadCone
-    health: 370
+    maxHealth: 370
   - componentName: Zombie
-    health: 190
+    maxHealth: 190
   bodyChange: {fileID: 0}
   headTopPartChange: {fileID: 0}
   headBottomPartChange: {fileID: 0}

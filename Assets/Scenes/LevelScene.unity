@@ -814,9 +814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombieObject: {fileID: 173837452404677869, guid: 83a52b96fc37e1446baf0c1fbde8d683, type: 3}
   lawn: {fileID: 1267851010}
-  zombiePool: []
-  zombieWaves:
-  - {fileID: 11400000, guid: eafe7ff406ef4324fbcda85b324617a3, type: 2}
+  level: {fileID: 11400000, guid: 587ab41f20166554992ed5359bf7b735, type: 2}
 --- !u!4 &2077251386
 Transform:
   m_ObjectHideFlags: 0
