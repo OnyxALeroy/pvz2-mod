@@ -18,6 +18,9 @@ public class SeedManager : MonoBehaviour
             // Attributing the seed sprite (showing the plant)
             seedSlot.Find("Plant").GetComponent<Image>().sprite = plant.PlantSeed;
 
+            // Showing the correct price
+            seedSlot.Find("CostText").GetComponent<Text>().text = plant.SunCost.ToString();
+
             Debug.Log($"Planted {plant.PlantName} at {seedSlot.position}");
         }
     }

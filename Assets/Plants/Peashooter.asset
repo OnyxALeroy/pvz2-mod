@@ -28,4 +28,4 @@ MonoBehaviour:
   plant: {fileID: 6281748906992316273, guid: 9295f731c9b7bc34eb2deb78e8fdfe72, type: 3}
   projectile: {fileID: 8192267771999617929, guid: 078cbdc258a58ae44957e24d812ab4fc, type: 3}
   slotBackground: {fileID: 5796148386543658997, guid: 0655b49b84b8b9640939452b8b50ea8c, type: 3}
-  plantSeed: {fileID: -1807345508359885377, guid: a0aa7fa15fe51aa4abb6dfe895baddc9, type: 3}
+  plantSeed: {fileID: 7325987210965994913, guid: 377ed8b6455e1614da926a21d4f5a6ec, type: 3}
