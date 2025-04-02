@@ -25,11 +25,27 @@ public class Plant : ScriptableObject
     [SerializeField] Vector2 fireRate = new Vector2(1.35f, 1.5f);
     [SerializeField] float projectileVelocity;
 
-    // Sprite Changes
     [Space(10)]
     [Header("Plant Components")]
     [SerializeField] GameObject plant;
-    [SerializeField] GameObject projectile; 
+    [SerializeField] GameObject projectile;
+
+    [Space(10)]
+    [Header("Seed Slot Components")]
+    [SerializeField] Sprite slotBackground;
+    [SerializeField] Sprite plantSeed;
 
     // Getters
+    public string PlantName => plantName;
+    public string Description => description;
+    public int SunCost => sunCost;
+    public float SeedRecharge => seedRecharge;
+    public int MaxHealth => maxHealth;
+    public int AttackDamage => attackDamage;
+    public RangeType Range => range;
+    public bool DoShoot => doShoot;
+    public Vector2 FireRate => fireRate;
+    public float ProjectileVelocity => projectileVelocity;
+    public Sprite SlotBackground => slotBackground;
+    public Sprite PlantSeed => plantSeed;
 }

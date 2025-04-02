@@ -8,6 +8,10 @@ public class LevelManager : MonoBehaviour
     [SerializeField] GameObject zombieObject;
     [SerializeField] Lawn lawn;
     [SerializeField] Level level;
+    [SerializeField] SeedManager seedManager;
+
+    // FIXME: Should be filled when plants are chosen
+    [SerializeField] List<Plant> plants = new List<Plant>();
 
     private List<ZombieWave> zombieWaves;   // These are the waves of zombies (in order)
     private int currentWave = -1;
@@ -15,7 +19,13 @@ public class LevelManager : MonoBehaviour
 
     private void Start(){
         zombieWaves = level.Waves;
+        if (zombieWaves == null || zombieWaves.Count == 0){
+            Debug.LogError("No waves found! Ensure Level has waves assigned.");
+            return;
+        }
+
         lawn.SetupLawn();
+        seedManager.SetupSeeds(plants);
         LaunchNextWave(true);
     }
 
@@ -41,6 +51,11 @@ public class LevelManager : MonoBehaviour
     private void LaunchWave(){
         currentWave++;
         ZombieWave wave = zombieWaves[currentWave];
+        if (currentWave >= zombieWaves.Count){
+            Debug.LogError($"currentWave {currentWave} index is out of range! No more waves to launch.");
+            return;
+        }
+
         wave.Setup();
         Debug.Log("Launched wave " + currentWave);
         foreach(var entry in wave.Zombies){
