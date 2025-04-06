@@ -1097,7 +1097,46 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      peashooter_0: -1260379074482062535
+      peashooter_1: -6750422567280712392
+      peashooter_10: -5153071060473514183
+      peashooter_11: 2759085744671396938
+      peashooter_12: 5799300547083501666
+      peashooter_13: 8502884663493082471
+      peashooter_14: 6077891623882690277
+      peashooter_15: -6112127881239659684
+      peashooter_16: -7001040324706597304
+      peashooter_17: -7959318228092167361
+      peashooter_18: -8251267477306224933
+      peashooter_19: 301156597512003844
+      peashooter_2: 6596260970118463656
+      peashooter_20: 7117564757373225081
+      peashooter_21: -5593330717038169760
+      peashooter_22: 946823199737978358
+      peashooter_23: 9129499473154241999
+      peashooter_24: 1756234262550122571
+      peashooter_25: 7114450552651290764
+      peashooter_26: 1630569724641981732
+      peashooter_27: -2956069092735486433
+      peashooter_28: 5106001501753274612
+      peashooter_29: 1417033549435090491
+      peashooter_3: -2087682919987981860
+      peashooter_30: 6943500102711172448
+      peashooter_31: 3135639403406860068
+      peashooter_32: 8593786615853583693
+      peashooter_33: -6790822807141826218
+      peashooter_34: 993485056797845899
+      peashooter_35: 4297654913328584582
+      peashooter_36: 7507072537343632619
+      peashooter_37: -1596316264969535516
+      peashooter_38: -3859974916745299455
+      peashooter_4: 6662940968498622665
+      peashooter_5: -1033653354958553465
+      peashooter_6: 1561498194181734822
+      peashooter_7: -1175753186254364681
+      peashooter_8: 1821815957607266560
+      peashooter_9: -5024667713113901422
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

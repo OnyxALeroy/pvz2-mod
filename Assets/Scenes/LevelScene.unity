@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seedSlotPrefab: {fileID: 6100062743487836544, guid: ad0728d6ebb50b04d840178363bd7b4a, type: 3}
+  lawn: {fileID: 0}
 --- !u!114 &96841026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -608,6 +609,8 @@ MonoBehaviour:
   lawnGrid: {fileID: 1694217877}
   tilePrefab: {fileID: 3238487724862210574, guid: 92f176f50d18ba94c9e78dcf43ef5aea, type: 3}
   zombiesContainer: {fileID: 1144890555}
+  TopLeftCoordinates: {x: -140, y: 245}
+  BottomRightCoordinates: {x: 601.25, y: -282.5}
 --- !u!1 &1490380639
 GameObject:
   m_ObjectHideFlags: 0

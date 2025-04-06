@@ -27,8 +27,8 @@ public class Plant : ScriptableObject
 
     [Space(10)]
     [Header("Plant Components")]
-    [SerializeField] GameObject plant;
-    [SerializeField] GameObject projectile;
+    [SerializeField] GameObject plantObject;
+    [SerializeField] GameObject projectileObject;
 
     [Space(10)]
     [Header("Seed Slot Components")]
@@ -46,6 +46,8 @@ public class Plant : ScriptableObject
     public bool DoShoot => doShoot;
     public Vector2 FireRate => fireRate;
     public float ProjectileVelocity => projectileVelocity;
+    public GameObject PlantObject => plantObject;
+    public GameObject ProjectileObject => projectileObject;
     public Sprite SlotBackground => slotBackground;
     public Sprite PlantSeed => plantSeed;
 }

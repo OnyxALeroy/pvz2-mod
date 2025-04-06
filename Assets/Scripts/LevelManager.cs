@@ -24,6 +24,8 @@ public class LevelManager : MonoBehaviour
             return;
         }
 
+        seedManager.lawn = lawn;
+
         lawn.SetupLawn();
         seedManager.SetupSeeds(plants);
         LaunchNextWave(true);

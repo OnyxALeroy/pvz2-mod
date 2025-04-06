@@ -64,6 +64,8 @@ public class Lawn : MonoBehaviour
     
         LayoutRebuilder.ForceRebuildLayoutImmediate(lawnGrid.GetComponent<RectTransform>());
     }
+    
+    // --------------------------------------------------------------------------------------------
 
     public Vector2 GetTileSize(){
         GameObject tile = lawnGrid.transform.GetChild(0).gameObject;
@@ -99,4 +101,38 @@ public class Lawn : MonoBehaviour
         Debug.LogError($"Tile ({i}, {j}) does not have a RectTransform!");
         return Vector3.zero;
     }
+
+    public Vector2Int? GetTileFromPosition(Vector2 worldPosition)
+    {
+        RectTransform gridRect = lawnGrid.GetComponent<RectTransform>();
+        Vector2 localPoint = gridRect.InverseTransformPoint(worldPosition);
+        Vector2 tileSize = GetTileSize();
+        float offsetX = localPoint.x;
+        float offsetY = -localPoint.y;
+        if (offsetX < 0 || offsetY < 0) { return null; }
+        int col = Mathf.FloorToInt(offsetX / tileSize.x);
+        int row = Mathf.FloorToInt(offsetY / tileSize.y);
+        if (col < 1 || col >= columnAmount - 1 || row < 0 || row >= rowAmount) { return null; }
+        return new Vector2Int(row + 1, col);
+    }
+
+    // --------------------------------------------------------------------------------------------
+
+    public void PlantSeed(GameObject plantPrefab, Vector2 plantPosition){
+        Vector2Int? tileCoords = GetTileFromPosition(plantPosition);
+        if (tileCoords != null){
+            int row = tileCoords.Value.x;
+            int col = tileCoords.Value.y;
+            int index = (row - 1) * columnAmount + col;
+
+            Tile tile = lawnGrid.transform.GetChild(index).gameObject.GetComponent<Tile>();
+
+            if (tile.IsFree){
+                tile.Plant(plantPrefab);
+                Debug.Log($"Trying to plant at ({row}, {col}), of index {index}");
+            }
+        }
+    }
+
+    // --------------------------------------------------------------------------------------------
 }
