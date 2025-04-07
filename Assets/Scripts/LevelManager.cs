@@ -109,12 +109,16 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public void PlantSeed(GameObject plantPrefab, Vector2 plantPosition, int plantingCost){
+    public bool PlantSeed(GameObject plantPrefab, Vector2 plantPosition, int plantingCost){
         if (CheckIfCanPlant(plantingCost, true)){
             if (lawn.PlantSeed(plantPrefab, plantPosition)){
                 sunAmount -= plantingCost;
+                return true;
+            } else {
+                return false;
             }
         }
+        return false;
     }
 
     // --------------------------------------------------------------------------------------------

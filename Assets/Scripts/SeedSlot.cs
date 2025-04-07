@@ -61,8 +61,9 @@ public class SeedSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         if (isClickSelected && Input.GetMouseButtonDown(0)){
             Vector3 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             worldPoint.z = 0;
-            seedManager.PlantSeed(plantPrefab, worldPoint, sunCost);
-            internalCooldown = plantationCooldown;
+            if (seedManager.PlantSeed(plantPrefab, worldPoint, sunCost)){
+                internalCooldown = plantationCooldown;
+            }
             isClickSelected = false;
         }
     }
@@ -109,8 +110,9 @@ public class SeedSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
                 Vector3 plantPosition = previewPlant.transform.position;
                 Destroy(previewPlant);
                 previewPlant = null;
-                seedManager.PlantSeed(plantPrefab, plantPosition, sunCost);
-                internalCooldown = plantationCooldown;
+                if (seedManager.PlantSeed(plantPrefab, plantPosition, sunCost)){
+                    internalCooldown = plantationCooldown;
+                }
             }
         }
     }

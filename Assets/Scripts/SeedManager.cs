@@ -47,7 +47,7 @@ public class SeedManager : MonoBehaviour
         return levelManager.CheckIfCanPlant(plantingCost, showAnimation);
     }
 
-    public void PlantSeed(GameObject plantPrefab, Vector3 plantPosition, int plantingCost){
-        levelManager.PlantSeed(plantPrefab, plantPosition, plantingCost);
+    public bool PlantSeed(GameObject plantPrefab, Vector3 plantPosition, int plantingCost){
+        return levelManager.PlantSeed(plantPrefab, plantPosition, plantingCost);
     }
 }
