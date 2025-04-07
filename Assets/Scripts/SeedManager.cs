@@ -17,6 +17,7 @@ public class SeedManager : MonoBehaviour
             seedSlot.GetComponent<SeedSlot>().seedManager = this;
             seedSlot.GetComponent<SeedSlot>().id = seedId;
             seedSlot.GetComponent<SeedSlot>().sunCost = plant.SunCost;
+            seedSlot.GetComponent<SeedSlot>().plantationCooldown = plant.SeedRecharge;
             seedId++;
 
             // Attributing the background sprite
@@ -31,7 +32,6 @@ public class SeedManager : MonoBehaviour
     }
 
     public void ChangeSelection(int index){
-        Debug.Log($"Selecting {index}");
         transform.GetChild(index).GetComponent<SeedSlot>().isClickSelected = !transform.GetChild(index).GetComponent<SeedSlot>().isClickSelected;
 
         for (int i = 0; i < transform.childCount; i++){
