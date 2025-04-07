@@ -16,6 +16,7 @@ public class SeedManager : MonoBehaviour
             seedSlot.GetComponent<SeedSlot>().plantPrefab = plant.PlantObject;
             seedSlot.GetComponent<SeedSlot>().seedManager = this;
             seedSlot.GetComponent<SeedSlot>().id = seedId;
+            seedSlot.GetComponent<SeedSlot>().sunCost = plant.SunCost;
             seedId++;
 
             // Attributing the background sprite
@@ -40,7 +41,13 @@ public class SeedManager : MonoBehaviour
         }
     }
 
-    public void PlantSeed(GameObject plantPrefab, Vector3 plantPosition){
-        levelManager.PlantSeed(plantPrefab, plantPosition);
+    // --------------------------------------------------------------------------------------------
+
+    public bool CheckIfCanPlant(int plantingCost, bool showAnimation){
+        return levelManager.CheckIfCanPlant(plantingCost, showAnimation);
+    }
+
+    public void PlantSeed(GameObject plantPrefab, Vector3 plantPosition, int plantingCost){
+        levelManager.PlantSeed(plantPrefab, plantPosition, plantingCost);
     }
 }

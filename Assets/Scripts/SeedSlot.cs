@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class SeedSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler
@@ -7,18 +8,43 @@ public class SeedSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     public SeedManager seedManager;
     public int id;
     public bool isClickSelected = false;
+    public int sunCost;
+
     private GameObject previewPlant;
+    private Vector3 targetScale;
+    private Vector3 originalScale;
+    private bool hasStoredOriginalScale = false;
+    private Image[] images;
+    private Color[] originalColors;
+    private bool colorsInitialized = false;
+    private float scaleSpeed = 5f;
+    private float selectedScaleMultiplier = 1.2f;
+    private float darkenFactor = 0.25f;
+    private float colorLerpSpeed = 10f;
 
     // --------------------------------------------------------------------------------------------
 
-    private void Update(){
-        transform.Find("SelectionMark").gameObject.SetActive(isClickSelected);
+    private void Start()
+    {
+        images = GetComponentsInChildren<Image>();
+        originalColors = new Color[images.Length];
 
-        if (isClickSelected && Input.GetMouseButtonDown(0))
+        for (int i = 0; i < images.Length; i++)
         {
+            originalColors[i] = images[i].color;
+        }
+
+        colorsInitialized = true;
+    }
+
+    private void Update(){
+        HandleScaleTransition();
+        HandleAvailability();
+
+        if (isClickSelected && Input.GetMouseButtonDown(0)){
             Vector3 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             worldPoint.z = 0;
-            seedManager.PlantSeed(plantPrefab, worldPoint);
+            seedManager.PlantSeed(plantPrefab, worldPoint, sunCost);
             isClickSelected = false;
         }
     }
@@ -27,8 +53,9 @@ public class SeedSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (plantPrefab)
+        if (plantPrefab && seedManager.CheckIfCanPlant(sunCost, true))
         {
+            seedManager.ChangeSelection(id);
             previewPlant = Instantiate(plantPrefab);
             
             // Making the plant semi-transparent
@@ -55,15 +82,47 @@ public class SeedSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     {
         if (previewPlant)
         {
+            seedManager.ChangeSelection(id);
             Vector3 plantPosition = previewPlant.transform.position;
             Destroy(previewPlant);
             previewPlant = null;
-            seedManager.PlantSeed(plantPrefab, plantPosition);
+            seedManager.PlantSeed(plantPrefab, plantPosition, sunCost);
         }
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
         seedManager.ChangeSelection(id);
+    }
+
+    // --------------------------------------------------------------------------------------------
+    
+    private void HandleScaleTransition()
+    {
+        if (!hasStoredOriginalScale)
+        {
+            originalScale = transform.localScale;
+            hasStoredOriginalScale = true;
+        }
+
+        Vector3 targetScale = isClickSelected ? originalScale * selectedScaleMultiplier : originalScale;
+        transform.localScale = Vector3.Lerp(transform.localScale, targetScale, Time.deltaTime * scaleSpeed);
+    }
+
+    private void HandleAvailability()
+    {
+        if (!colorsInitialized) return;
+
+        bool isAvailable = seedManager.CheckIfCanPlant(sunCost, false);
+
+        for (int i = 0; i < images.Length; i++)
+        {
+            Color original = originalColors[i];
+            Color targetColor = isAvailable
+                ? original
+                : new Color(original.r * darkenFactor, original.g * darkenFactor, original.b * darkenFactor, original.a);
+
+            images[i].color = Color.Lerp(images[i].color, targetColor, Time.deltaTime * colorLerpSpeed);
+        }
     }
 }

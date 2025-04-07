@@ -9,9 +9,13 @@ public class LevelManager : MonoBehaviour
     [SerializeField] Lawn lawn;
     [SerializeField] Level level;
     [SerializeField] SeedManager seedManager;
+    [SerializeField] SunDisplay sunDisplay;
 
     // FIXME: Should be filled when plants are chosen
     [SerializeField] List<Plant> plants = new List<Plant>();
+
+    // FIXME: Will have to be defaulted to 0
+    private int sunAmount = 250;
 
     private List<ZombieWave> zombieWaves;   // These are the waves of zombies (in order)
     private int currentWave = -1;
@@ -32,12 +36,17 @@ public class LevelManager : MonoBehaviour
     private void Update(){
         internalLevelTimer += Time.fixedDeltaTime;
 
+        // Managing Zombies
         float tileWidth = lawn.GetTileSize()[0];
         foreach (var zombieObject in lawn.Zombies){
             zombieObject.GetComponent<ZombieObject>().ZombieUpdate(tileWidth);
             // TODO: check if zombie is dead and remove it from the level
         }
 
+        // Updating the sun amount
+        sunDisplay.SetSunAmount(sunAmount);
+
+        // Checking if Game Over
         if (!IsGameOver()){
             LaunchNextWave(false);
         } else {
@@ -89,9 +98,22 @@ public class LevelManager : MonoBehaviour
 
     // --------------------------------------------------------------------------------------------
 
-    public void PlantSeed(GameObject plantPrefab, Vector2 plantPosition){
-        if (lawn.PlantSeed(plantPrefab, plantPosition)){
-            Debug.Log("Successfully planted");
+    public bool CheckIfCanPlant(int plantingCost, bool showAnimation){
+        if (plantingCost <= sunAmount){
+            return true;
+        } else {
+            if (showAnimation){
+                sunDisplay.ShowNotEnoughSun();
+            }
+            return false;
+        }
+    }
+
+    public void PlantSeed(GameObject plantPrefab, Vector2 plantPosition, int plantingCost){
+        if (CheckIfCanPlant(plantingCost, true)){
+            if (lawn.PlantSeed(plantPrefab, plantPosition)){
+                sunAmount -= plantingCost;
+            }
         }
     }
 
