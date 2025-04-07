@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bfd57c83380fb64c82adbf83f53d2f3, type: 3}
+  m_Name: Sunflower
+  m_EditorClassIdentifier: 
+  plantName: Sunflower
+  description: 'Sunflowers are essential for you to produce extra sun. Try planting
+    as many as you can!
+
+
+    After the release of her first major Youtuber video
+    "Zombies On Your Lawn," Sunflower''s Youtuber channel has been bursting with
+    fun. She is currently putting the final touches on her reality show TV pitch
+    "Sunflower Thinks She Can Dance."'
+  sunCost: 50
+  seedRecharge: 5
+  maxHealth: 300
+  type: 0
+  attackDamage: 0
+  range: 0
+  doShoot: 0
+  fireRate: {x: 1.35, y: 1.5}
+  projectileVelocity: 0
+  productionAmount: 50
+  productionCooldown: 24
+  plantObject: {fileID: 4288188112597106855, guid: d590f0c06a92bff42a89b63248ecc5fa, type: 3}
+  auxiliaryObjects: []
+  slotBackground: {fileID: 5796148386543658997, guid: 0655b49b84b8b9640939452b8b50ea8c, type: 3}
+  plantSeed: {fileID: 4029372876677459621, guid: c87a3d3a8e5282d4aa17c7a8bd655ad7, type: 3}
