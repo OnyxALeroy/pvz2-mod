@@ -24,8 +24,6 @@ public class LevelManager : MonoBehaviour
             return;
         }
 
-        seedManager.lawn = lawn;
-
         lawn.SetupLawn();
         seedManager.SetupSeeds(plants);
         LaunchNextWave(true);
@@ -86,6 +84,14 @@ public class LevelManager : MonoBehaviour
         } else {
             // TODO: manage end (by a win) of level
             Debug.Log("No wave left to launch!");
+        }
+    }
+
+    // --------------------------------------------------------------------------------------------
+
+    public void PlantSeed(GameObject plantPrefab, Vector2 plantPosition){
+        if (lawn.PlantSeed(plantPrefab, plantPosition)){
+            Debug.Log("Successfully planted");
         }
     }
 

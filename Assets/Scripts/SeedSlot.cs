@@ -5,8 +5,25 @@ public class SeedSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 {
     public GameObject plantPrefab;
     public SeedManager seedManager;
+    public int id;
+    public bool isClickSelected = false;
     private GameObject previewPlant;
-    private bool isClickSelected = false;
+
+    // --------------------------------------------------------------------------------------------
+
+    private void Update(){
+        transform.Find("SelectionMark").gameObject.SetActive(isClickSelected);
+
+        if (isClickSelected && Input.GetMouseButtonDown(0))
+        {
+            Vector3 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            worldPoint.z = 0;
+            seedManager.PlantSeed(plantPrefab, worldPoint);
+            isClickSelected = false;
+        }
+    }
+
+    // --------------------------------------------------------------------------------------------
 
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -21,8 +38,6 @@ public class SeedSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
                 c.a = 0.5f;
                 sr.color = c;
             }
-
-            Debug.Log("Dragging " + plantPrefab.name);
         }
     }
 
@@ -41,31 +56,14 @@ public class SeedSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         if (previewPlant)
         {
             Vector3 plantPosition = previewPlant.transform.position;
-            Destroy(previewPlant); // Destroy the preview when drag ends
+            Destroy(previewPlant);
             previewPlant = null;
-
             seedManager.PlantSeed(plantPrefab, plantPosition);
         }
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (!isClickSelected)
-        {
-            isClickSelected = true;
-            Debug.Log("Seed selected: " + plantPrefab.name);
-        }
-        else
-        {
-            // Get the clicked position
-            Vector3 worldPoint = Camera.main.ScreenToWorldPoint(eventData.position);
-            worldPoint.z = 0;
-            
-            // Place the plant
-            Instantiate(plantPrefab, worldPoint, Quaternion.identity);
-            Debug.Log("Planted " + plantPrefab.name + " at " + worldPoint);
-
-            isClickSelected = false; // Reset selection
-        }
+        seedManager.ChangeSelection(id);
     }
 }

@@ -118,7 +118,7 @@ public class Lawn : MonoBehaviour
 
     // --------------------------------------------------------------------------------------------
 
-    public void PlantSeed(GameObject plantPrefab, Vector2 plantPosition){
+    public bool PlantSeed(GameObject plantPrefab, Vector2 plantPosition){
         Vector2Int? tileCoords = GetTileFromPosition(plantPosition);
         if (tileCoords != null){
             int row = tileCoords.Value.x;
@@ -129,9 +129,10 @@ public class Lawn : MonoBehaviour
 
             if (tile.IsFree){
                 tile.Plant(plantPrefab);
-                Debug.Log($"Trying to plant at ({row}, {col}), of index {index}");
+                return true;
             }
         }
+        return false;
     }
 
     // --------------------------------------------------------------------------------------------
