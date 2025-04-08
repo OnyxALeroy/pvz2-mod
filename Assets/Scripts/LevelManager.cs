@@ -5,6 +5,7 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     // Needed Prefabs for populating
+    [SerializeField] GameObject plantObject;
     [SerializeField] GameObject zombieObject;
     [SerializeField] Lawn lawn;
     [SerializeField] Level level;
@@ -111,7 +112,7 @@ public class LevelManager : MonoBehaviour
 
     public bool PlantSeed(GameObject plantPrefab, Vector2 plantPosition, int plantingCost){
         if (CheckIfCanPlant(plantingCost, true)){
-            if (lawn.PlantSeed(plantPrefab, plantPosition)){
+            if (lawn.PlantSeed(plantObject, plantPrefab, plantPosition)){
                 sunAmount -= plantingCost;
                 return true;
             } else {

@@ -118,7 +118,7 @@ public class Lawn : MonoBehaviour
 
     // --------------------------------------------------------------------------------------------
 
-    public bool PlantSeed(GameObject plantPrefab, Vector2 plantPosition){
+    public bool PlantSeed(GameObject plantObject, GameObject plantPrefab, Vector2 plantPosition){
         Vector2Int? tileCoords = GetTileFromPosition(plantPosition);
         if (tileCoords != null){
             int row = tileCoords.Value.x;
@@ -128,7 +128,7 @@ public class Lawn : MonoBehaviour
             Tile tile = lawnGrid.transform.GetChild(index).gameObject.GetComponent<Tile>();
 
             if (tile.IsFree){
-                tile.Plant(plantPrefab);
+                tile.Plant(plantObject, plantPrefab);
                 return true;
             }
         }

@@ -8,9 +8,10 @@ public class Tile : MonoBehaviour
     
     private GameObject content;
 
-    public void Plant(GameObject plant){
+    public void Plant(GameObject plantObject, GameObject plant){
         isFree = false;
-        content = Instantiate(plant, transform.position, transform.rotation);
+        content = Instantiate(plantObject, transform.position, transform.rotation);
+        Instantiate(plant, content.transform, false);
         StartCoroutine(AdjustAfterLayout());
     }
 

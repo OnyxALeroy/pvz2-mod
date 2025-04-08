@@ -1,6 +1,6 @@
 # pvz2-mod
 
-## What's have been done
+## What has been done
 
 ### Zombies
 
@@ -9,6 +9,15 @@
 - On spawn, the zombies start walking to the left, with the corresponding animation and speed (the speed is encoded by the Zombie's speed type).
 - Waves will launched based on levels' internal data (how long to wait between waves, and how much damage needs to be dealt before launching the next one).
 - As soon as a Zombie crossed the lawn, Game Over is triggered.
+
+### Plants
+
+- An advanced plant builder, allowing (for now) to build sun producers or attackers.
+- A sun economy is built, displayed in the top-left corner of the screen.
+- Seed slots are displayed at the left of the screen, and plants can be dragged and dropped on a free tile to be planted. The "click on the plant, then click on the tile" plantation method is also coded.
+- If the player hasn't enough sun to plant the selected plant, the sun amount will flash in red. Moreover, un-plantable plants will have their seed slot darken.
+- Internal cooldown of the plants is coded, and its duration can be seen as the seed slots gradually returns back to normal (a dark overlay gradually shrink, as in the original game).
+- Sunflower and Peashooter have their "Idle" animation.
 
 ## Todo-List
 
@@ -19,19 +28,14 @@ b) _[Optional]_ Adding damaged animations to the Zombies.
 
 ### Plants
 
-a) Adding a Plant Builder (using the ScriptableObject class) ;
-b) Adding the left seed slots (showing the selected plants with their cost) ;
-c) Coding the "Drag & Drop" and the "Click & Click" methods to plant, decreasing the sun amount by the plant's cost (the current available sun amount is for now a pre-determined value) ;
-d) Adding a cooldown timer between each plantation ;
-e) Adding a tile verification before planting (is the tile available?) ;
-f) _[Optional]_ Adding animations to plants.
+a) _[Optional]_ Adding a new animation for the plants: a shooting one for Peashooter and a producing one for the sunflower.
 
 ### Interactions
 
 a) **Zombie on plant:**
 
 - When a Zombie collides with a plant, it switches animations (from Walking to Eating) ;
-- The plant's HP should decrease progressively (the more Zombies eating, the faster the plant's HP decrease) ;
+- The plant's HP should decrease progressively (the more Zombies eating, the faster the plant's HP decrease + every Zombie has a "hunger" attribute which categorize how much damage it deals) ;
 - When the plant dies, the Zombie goes back to Walking, and the plant should be removed from the tile (freeing it).
 
 b) **Plant on itself:** every sun producer should produce a certain amount of suns each time (the amount and the cooldown are pre-coded in the Plant's ScriptableObject).

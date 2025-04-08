@@ -1173,6 +1173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f278692205e16f540a9aa62956b9d837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  plantObject: {fileID: 173837452404677869, guid: 981899cdfbe16864baf51f0443a60fa6, type: 3}
   zombieObject: {fileID: 173837452404677869, guid: 83a52b96fc37e1446baf0c1fbde8d683, type: 3}
   lawn: {fileID: 1267851010}
   level: {fileID: 11400000, guid: 587ab41f20166554992ed5359bf7b735, type: 2}
