@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sunflower_slot_0: 4029372876677459621
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
