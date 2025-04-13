@@ -13,7 +13,9 @@ public class Lawn : MonoBehaviour
 
     private int rowAmount = 5;
     private int columnAmount = 11;   // 9 true columns + 2 false ones (zombie spawn & Game Over)
+
     private List<GameObject> zombies = new List<GameObject>();
+    private List<GameObject> plants = new List<GameObject>();
 
     public Sprite LawnImage => lawnImage;
     public Image LawnBackground => lawnBackground;
@@ -21,6 +23,7 @@ public class Lawn : MonoBehaviour
     public GameObject TilePrefab => tilePrefab;
     public GameObject ZombiesContainer => zombiesContainer;
     public List<GameObject> Zombies => zombies;
+    public List<GameObject> Plants => plants;
 
     public bool HasZombieCrossed { get; set; }
 
@@ -33,6 +36,15 @@ public class Lawn : MonoBehaviour
     public void RemoveZombie(GameObject zombie)
     {
         zombies.Remove(zombie);
+    }
+
+    public void AddPlant(GameObject plant)
+    {
+        plants.Add(plant);
+    }
+    public void RemovePlant(GameObject plant)
+    {
+        plants.Remove(plant);
     }
 
     // --------------------------------------------------------------------------------------------
@@ -58,13 +70,14 @@ public class Lawn : MonoBehaviour
                         collider = tile.AddComponent<BoxCollider2D>();
                     }
                     collider.isTrigger = true;
+                    collider.offset = new Vector2(-40.625f, collider.offset.y);
                 }
             }
         }
     
         LayoutRebuilder.ForceRebuildLayoutImmediate(lawnGrid.GetComponent<RectTransform>());
     }
-    
+
     // --------------------------------------------------------------------------------------------
 
     public Vector2 GetTileSize(){
@@ -118,7 +131,7 @@ public class Lawn : MonoBehaviour
 
     // --------------------------------------------------------------------------------------------
 
-    public bool PlantSeed(GameObject plantObject, GameObject plantPrefab, Vector2 plantPosition){
+    public bool PlantSeed(GameObject plantObject, Vector2 plantPosition, Plant plant){
         Vector2Int? tileCoords = GetTileFromPosition(plantPosition);
         if (tileCoords != null){
             int row = tileCoords.Value.x;
@@ -128,7 +141,7 @@ public class Lawn : MonoBehaviour
             Tile tile = lawnGrid.transform.GetChild(index).gameObject.GetComponent<Tile>();
 
             if (tile.IsFree){
-                tile.Plant(plantObject, plantPrefab);
+                tile.Plant(plantObject, plant, row);
                 return true;
             }
         }

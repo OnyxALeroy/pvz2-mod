@@ -44,6 +44,11 @@ public class LevelManager : MonoBehaviour
             // TODO: check if zombie is dead and remove it from the level
         }
 
+        // Managing Plants
+        foreach (var plantObject in lawn.Plants){
+            plantObject.GetComponent<PlantObject>().PlantUpdate(lawn);
+        }
+
         // Updating the sun amount
         sunDisplay.SetSunAmount(sunAmount);
 
@@ -78,7 +83,7 @@ public class LevelManager : MonoBehaviour
             Vector3 spawnPosition = lawn.GetTileCenter(entry.spawnLane, column);
             GameObject newZombie = Instantiate(zombieObject, spawnPosition, Quaternion.identity, lawn.ZombiesContainer.transform);
             newZombie.GetComponent<ZombieObject>().zombie = entry.zombie;
-            newZombie.GetComponent<ZombieObject>().SetSprite();
+            newZombie.GetComponent<ZombieObject>().SetSprite(entry.spawnLane);
             lawn.AddZombie(newZombie);
         }
     }
@@ -110,10 +115,10 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public bool PlantSeed(GameObject plantPrefab, Vector2 plantPosition, int plantingCost){
-        if (CheckIfCanPlant(plantingCost, true)){
-            if (lawn.PlantSeed(plantObject, plantPrefab, plantPosition)){
-                sunAmount -= plantingCost;
+    public bool PlantSeed(Vector2 plantPosition, Plant plant){
+        if (CheckIfCanPlant(plant.SunCost, true)){
+            if (lawn.PlantSeed(plantObject, plantPosition, plant)){
+                sunAmount -= plant.SunCost;
                 return true;
             } else {
                 return false;

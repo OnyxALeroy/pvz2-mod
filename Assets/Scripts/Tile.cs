@@ -1,5 +1,5 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
@@ -8,10 +8,11 @@ public class Tile : MonoBehaviour
     
     private GameObject content;
 
-    public void Plant(GameObject plantObject, GameObject plant){
+    public void Plant(GameObject plantObject, Plant plant, int row){
         isFree = false;
-        content = Instantiate(plantObject, transform.position, transform.rotation);
-        Instantiate(plant, content.transform, false);
+        content = Instantiate(plantObject, transform);
+        content.GetComponent<PlantObject>().plant = plant;
+        content.GetComponent<PlantObject>().SetSprite(row);
         StartCoroutine(AdjustAfterLayout());
     }
 

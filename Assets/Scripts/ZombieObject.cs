@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -74,29 +76,12 @@ public class ZombieObject : MonoBehaviour
         return null;
     }
 
-    private void AdjustColliderSize()
-    {
-        BoxCollider2D collider = GetComponent<BoxCollider2D>();
-        if (collider == null)
-        {
-            collider = gameObject.AddComponent<BoxCollider2D>();
-        }
-
-        SpriteRenderer spriteRenderer = zombiePrefabTemplate.GetComponentInChildren<SpriteRenderer>();
-        if (spriteRenderer != null)
-        {
-            collider.size = spriteRenderer.bounds.size; // Adjust to match the sprite size
-            collider.offset = spriteRenderer.bounds.center - transform.position; // Center it
-        }
-    }
-
     // --------------------------------------------------------------------------------------------
 
-    public void SetSprite(){
+    public void SetSprite(int row){
         Vector3 offsets = new Vector3(zombie.ZombiePrefabTemplate.GetComponent<ZombiePrefab>().XOffset, zombie.ZombiePrefabTemplate.GetComponent<ZombiePrefab>().YOffset, zombie.ZombiePrefabTemplate.GetComponent<ZombiePrefab>().ZOffset);
         zombiePrefabTemplate = Instantiate(zombie.ZombiePrefabTemplate, transform.position + offsets, transform.rotation);
         zombiePrefabTemplate.transform.SetParent(transform);
-        AdjustColliderSize();
 
         if (zombie.BodyChange != null) { FindChildByName(zombiePrefabTemplate.transform, "Body").GetComponent<SpriteRenderer>().sprite = zombie.BodyChange; }
         if (zombie.HeadTopPartChange != null) { FindChildByName(zombiePrefabTemplate.transform, "HeadTopPart").GetComponent<SpriteRenderer>().sprite = zombie.HeadTopPartChange; }
@@ -117,6 +102,12 @@ public class ZombieObject : MonoBehaviour
         if (zombie.RightLegChange != null) { FindChildByName(zombiePrefabTemplate.transform, "RightLeg").GetComponent<SpriteRenderer>().sprite = zombie.RightLegChange; }
         if (zombie.RightFootBackChange != null) { FindChildByName(zombiePrefabTemplate.transform, "RightFootBack").GetComponent<SpriteRenderer>().sprite = zombie.RightFootBackChange; }
         if (zombie.RightFootFrontChange != null) { FindChildByName(zombiePrefabTemplate.transform, "RightFootFront").GetComponent<SpriteRenderer>().sprite = zombie.RightFootFrontChange; }
+
+        int offset = 500 + row * 100;
+        foreach (SpriteRenderer sr in zombiePrefabTemplate.GetComponentsInChildren<SpriteRenderer>())
+        {
+            sr.sortingOrder += offset;
+        }
     }
 
     // --------------------------------------------------------------------------------------------
@@ -127,11 +118,10 @@ public class ZombieObject : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Zombie entered trigger with: " + other.gameObject.name);
-        Lawn lawn = other.gameObject.transform.parent.transform.parent.GetComponent<Lawn>();
-        if (lawn != null)
+        if (other.gameObject.name == "Tile(Clone)")
         {
+            other.gameObject.transform.parent.transform.parent.GetComponent<Lawn>().HasZombieCrossed = true;
             Debug.Log("Zombie collided with a tile!");
-            lawn.HasZombieCrossed = true;
         }
     }
 

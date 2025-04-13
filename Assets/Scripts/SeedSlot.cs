@@ -4,12 +4,10 @@ using UnityEngine.EventSystems;
 
 public class SeedSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler
 {
-    public GameObject plantPrefab;
     public SeedManager seedManager;
     public int id;
     public bool isClickSelected = false;
-    public int sunCost;
-    public float plantationCooldown;
+    public Plant plant;
 
     private GameObject previewPlant;
     private bool isAvailable = true;
@@ -54,15 +52,15 @@ public class SeedSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         }
 
         // Cooldown overlay manager
-        float cooldownProgress = Mathf.Clamp01(internalCooldown / plantationCooldown);
+        float cooldownProgress = Mathf.Clamp01(internalCooldown / plant.SeedRecharge);
         cooldownOverlay.fillAmount = cooldownProgress;
 
         // Manage "Click & Click" plantation
         if (isClickSelected && Input.GetMouseButtonDown(0)){
             Vector3 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             worldPoint.z = 0;
-            if (seedManager.PlantSeed(plantPrefab, worldPoint, sunCost)){
-                internalCooldown = plantationCooldown;
+            if (seedManager.PlantSeed(worldPoint, plant)){
+                internalCooldown = plant.SeedRecharge;
             }
             isClickSelected = false;
         }
@@ -73,10 +71,10 @@ public class SeedSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     public void OnBeginDrag(PointerEventData eventData)
     {
         if (internalCooldown <= 0f){
-            if (plantPrefab && seedManager.CheckIfCanPlant(sunCost, true))
+            if (plant.PlantObject && seedManager.CheckIfCanPlant(plant.SunCost, true))
             {
                 seedManager.ChangeSelection(id);
-                previewPlant = Instantiate(plantPrefab);
+                previewPlant = Instantiate(plant.PlantObject);
                 
                 // Making the plant semi-transparent
                 foreach (var sr in previewPlant.GetComponentsInChildren<SpriteRenderer>())
@@ -110,8 +108,8 @@ public class SeedSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
                 Vector3 plantPosition = previewPlant.transform.position;
                 Destroy(previewPlant);
                 previewPlant = null;
-                if (seedManager.PlantSeed(plantPrefab, plantPosition, sunCost)){
-                    internalCooldown = plantationCooldown;
+                if (seedManager.PlantSeed(plantPosition, plant)){
+                    internalCooldown = plant.SeedRecharge;
                 }
             }
         }
@@ -119,7 +117,7 @@ public class SeedSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (internalCooldown <= 0f && seedManager.CheckIfCanPlant(sunCost, true)){
+        if (internalCooldown <= 0f && seedManager.CheckIfCanPlant(plant.SunCost, true)){
             seedManager.ChangeSelection(id);
         }
     }
@@ -140,8 +138,8 @@ public class SeedSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
     private void HandleAvailability()
     {
-        isAvailable = seedManager.CheckIfCanPlant(sunCost, false) && internalCooldown <= 0f;
-        bool hasEnoughSun = seedManager.CheckIfCanPlant(sunCost, false);
+        isAvailable = seedManager.CheckIfCanPlant(plant.SunCost, false) && internalCooldown <= 0f;
+        bool hasEnoughSun = seedManager.CheckIfCanPlant(plant.SunCost, false);
         for (int i = 0; i < images.Length; i++)
         {
             Color original = originalColors[i];

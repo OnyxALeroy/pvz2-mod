@@ -12,12 +12,10 @@ public class SeedManager : MonoBehaviour
         int seedId = 0;
         foreach (var plant in plants)
         {
-            Transform seedSlot = Instantiate(seedSlotPrefab, transform).transform;  
-            seedSlot.GetComponent<SeedSlot>().plantPrefab = plant.PlantObject;
+            Transform seedSlot = Instantiate(seedSlotPrefab, transform).transform;
+            seedSlot.GetComponent<SeedSlot>().plant = plant;
             seedSlot.GetComponent<SeedSlot>().seedManager = this;
             seedSlot.GetComponent<SeedSlot>().id = seedId;
-            seedSlot.GetComponent<SeedSlot>().sunCost = plant.SunCost;
-            seedSlot.GetComponent<SeedSlot>().plantationCooldown = plant.SeedRecharge;
             seedId++;
 
             // Attributing the background sprite
@@ -47,7 +45,7 @@ public class SeedManager : MonoBehaviour
         return levelManager.CheckIfCanPlant(plantingCost, showAnimation);
     }
 
-    public bool PlantSeed(GameObject plantPrefab, Vector3 plantPosition, int plantingCost){
-        return levelManager.PlantSeed(plantPrefab, plantPosition, plantingCost);
+    public bool PlantSeed(Vector3 plantPosition, Plant plant){
+        return levelManager.PlantSeed(plantPosition, plant);
     }
 }
